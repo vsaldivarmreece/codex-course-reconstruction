@@ -2,5 +2,20 @@
 
 Track B del PRD.
 
-Espacio reservado para la web app demo. Aun no se fija framework para no cerrar decisiones antes de validar alcance tecnico y educativo.
+Stack asumido para la reconstruccion educativa:
 
+- `Next.js`
+- `TypeScript`
+- `Supabase` para auth y datos
+
+Objetivo del MVP:
+
+- demostrar un flujo full-stack guiado por Codex;
+- tener pantallas minimas y datos reales de prueba;
+- servir como base para el segmento MCP.
+
+No hacer todavia:
+
+- UI pixel-perfect del video;
+- features no verificadas en evidencia;
+- integraciones de produccion.

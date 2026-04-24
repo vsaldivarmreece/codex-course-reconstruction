@@ -28,4 +28,7 @@ coverage/
 DerivedData/
 *.xcuserstate
 *.xcworkspace
-
+.expo/
+.expo-shared/
+android/
+ios/

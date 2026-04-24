@@ -30,5 +30,16 @@ git status
 - Git local inicializado en rama `main`.
 - Estructura base creada.
 - PRD inicial disponible en `docs/specs/codex-course-reconstruction/PRD.md`.
-- Stack aun no fijado para evitar acoplar implementacion antes de cerrar alcance.
+- Stack educativo fijado para arrancar la reconstruccion:
+  - `apps/web`: `Next.js + TypeScript + Supabase`.
+  - `apps/mobile`: `Expo + React Native + TypeScript`.
+  - `services/backend`: `Supabase` como backend principal y punto de integracion MCP.
+  - `packages/shared`: tipos, contratos y modelos compartidos.
 
+## Orden recomendado de trabajo
+
+1. Completar `docs/evidence/` con claims, prompts y minutos verificados.
+2. Ejecutar `Track A` y dejar bitacora en `docs/learning-log/`.
+3. Construir MVP de `apps/web`.
+4. Integrar `services/backend` y validar flujo MCP.
+5. Solo despues abrir `apps/mobile`.

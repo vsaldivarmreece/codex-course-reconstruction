@@ -1,0 +1,12 @@
+{
+  "name": "ia-learning",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "check:docs": "echo 'Docs scaffolding ready'",
+    "plan:web": "echo 'Next step: scaffold apps/web'",
+    "plan:mobile": "echo 'Next step: scaffold apps/mobile'",
+    "plan:backend": "echo 'Next step: define Supabase + MCP flow'"
+  }
+}
