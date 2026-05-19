@@ -14,3 +14,30 @@ Ideas for improving how this workspace researches, builds, validates, documents,
 - Expected impact:
 - Validation step:
 ```
+
+## Source-to-Experiment Pipeline
+
+- Source: [Codex Full Course 2026](../../processed/summaries/youtube-codex-full-course-2026-KXIdYEdOPys-summary.md)
+- Confidence: verified
+- Current friction: research summaries can become passive notes without driving implementation or validation.
+- Proposed change: for each high-signal source, save raw evidence, normalized transcript, summary, insights, project links and at least one experiment with evidence pointer.
+- Expected impact: makes `knowledge/` useful for future RAG and turns external learning into testable workflow improvements.
+- Validation step: after three sources, inspect whether project files contain enough linked experiments to influence roadmap decisions.
+
+## Multi-Agent Control Plane
+
+- Source: [Codex Full Course 2026](../../processed/summaries/youtube-codex-full-course-2026-KXIdYEdOPys-summary.md)
+- Confidence: inferred
+- Current friction: parallel agent work can lose state, duplicate effort or finish without validation.
+- Proposed change: maintain a small checklist with artifact, owner/chat, dependency, status, risk and validation step before launching multiple agent tasks.
+- Expected impact: better orchestration for long-running work and clearer stop conditions.
+- Validation step: use the checklist on the next multi-file or multi-artifact task and record cycle time plus rework.
+
+## Transcript Failure Evidence Policy
+
+- Source: [Riley Brown latest 10 videos](../../processed/summaries/youtube-riley-brown-channel-report-2026-05-19.md)
+- Confidence: verified
+- Current friction: channel-level reports can silently degrade when YouTube exposes caption tracks but transcript endpoints return empty responses or rate limits.
+- Proposed change: always save per-video transcript error JSON next to successful transcripts and include a report section separating metadata-backed, transcript-backed, inferred, and recommended claims.
+- Expected impact: prevents summaries from pretending to have transcript evidence and makes future retries/audits straightforward.
+- Validation step: retry the Riley Brown source pack later with a working PO token or authorized cookies and compare the updated transcript-backed report against this metadata-only version.

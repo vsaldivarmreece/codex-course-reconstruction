@@ -19,6 +19,24 @@ Este workspace esta organizado para avanzar en tres tracks del PRD:
 - `docs`: PRD, evidencia, backlog y runbooks.
 - `knowledge`: memoria local derivada de YouTube, Reddit, fuentes web, tendencias de IA, patrones de implementacion e ideas de monetizacion.
 
+## Memoria de conocimiento
+
+Este repo usa `knowledge/` como memoria derivada local. El chat coordina, pero los artefactos durables viven en disco:
+
+- `knowledge/raw/`: evidencia original por fuente.
+- `knowledge/processed/transcripts/`: transcripciones normalizadas.
+- `knowledge/processed/summaries/`: analisis estructurado de fuentes completas.
+- `knowledge/processed/insights/`: aprendizajes atomicos reutilizables.
+- `knowledge/projects/ia-learning/`: memoria curada para decisiones, experimentos y preguntas abiertas.
+
+Para iniciar una nueva fuente con la estructura correcta:
+
+```bash
+python3 scripts/knowledge_new_source.py youtube "Source Title" --source-id VIDEO_ID --url "https://..."
+```
+
+El indice principal esta en `knowledge/projects/ia-learning/source-index.md`.
+
 ## Siguiente paso cuando exista el remoto
 
 ```bash

@@ -28,6 +28,24 @@ Usar esta convencion cuando una fuente pueda producir:
 - `knowledge/projects/ia-learning/`: memoria curada por area del proyecto.
 - `knowledge/briefs/`: sintesis recurrentes por semana o tema.
 
+## Control del proyecto
+
+Mantener estos archivos como superficie de decision:
+
+- `knowledge/projects/ia-learning/source-index.md`: indice de fuentes ya procesadas.
+- `knowledge/projects/ia-learning/agent-workflows.md`: workflows reutilizables para agentes y carpetas de proyecto.
+- `knowledge/projects/ia-learning/experiments.md`: experimentos derivados de investigacion.
+- `knowledge/projects/ia-learning/implementation-patterns.md`: patrones tecnicos reutilizables.
+- `knowledge/projects/ia-learning/monetization-ideas.md`: hipotesis de negocio.
+- `knowledge/projects/ia-learning/process-improvements.md`: mejoras al proceso de trabajo.
+- `knowledge/projects/ia-learning/open-questions.md`: preguntas pendientes de evidencia.
+
+Para crear placeholders consistentes:
+
+```bash
+python3 scripts/knowledge_new_source.py youtube "Source Title" --source-id VIDEO_ID --url "https://..."
+```
+
 ## Regla para otros workspaces
 
 Si otro workspace necesita esta memoria antes de que exista Supabase:

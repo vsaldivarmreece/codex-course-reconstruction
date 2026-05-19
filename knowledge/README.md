@@ -40,7 +40,43 @@ knowledge/
   schema/
     source-metadata.template.json
     insight.template.md
+    summary.template.md
+    source-package.template.md
 ```
+
+## Operating Model
+
+Use the chat as the coordinator and the filesystem as the durable record.
+
+For every useful source or initiative, create the same four layers:
+
+1. `raw/`: original payloads, exports, API responses, metadata, or failure evidence.
+2. `processed/`: normalized transcripts, threads, summaries, and atomic insights.
+3. `projects/ia-learning/`: curated links from insights to project decisions, experiments, and open questions.
+4. `briefs/`: recurring synthesis by week or topic when multiple sources accumulate.
+
+The recommended naming pattern is:
+
+```txt
+<source>-<short-title>-<source-id>.<ext>
+```
+
+Examples:
+
+```txt
+knowledge/raw/youtube/ytscribe-codex-full-course-2026-KXIdYEdOPys-en-auto.json
+knowledge/processed/transcripts/youtube-codex-full-course-2026-KXIdYEdOPys-en-auto.md
+knowledge/processed/summaries/youtube-codex-full-course-2026-KXIdYEdOPys-summary.md
+knowledge/processed/insights/youtube-codex-full-course-2026-agent-workflows.md
+```
+
+To scaffold a new source package:
+
+```bash
+python3 scripts/knowledge_new_source.py youtube "Source Title" --source-id VIDEO_ID --url "https://..."
+```
+
+This creates placeholders in the correct folders; replace placeholders with real source data and analysis.
 
 ## Source Lifecycle
 
@@ -49,6 +85,19 @@ knowledge/
 3. Extract insights with source references and confidence labels.
 4. Link relevant insights into `knowledge/projects/ia-learning/`.
 5. Promote repeated or validated insights into docs, backlog, PRDs, or implementation tasks.
+
+## Project Control Files
+
+`knowledge/projects/ia-learning/` is the curated decision surface for this repo:
+
+- `source-index.md`: registry of analyzed sources and where their artifacts live.
+- `agent-workflows.md`: reusable multi-agent/project-folder workflows.
+- `experiments.md`: validation tasks derived from research.
+- `implementation-patterns.md`: technical patterns worth reusing.
+- `monetization-ideas.md`: product/business hypotheses.
+- `process-improvements.md`: improvements to how this repo researches, builds, validates, and ships.
+- `ai-news.md`: time-sensitive AI/tooling updates.
+- `open-questions.md`: decisions that still need evidence.
 
 ## Confidence Labels
 
