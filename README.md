@@ -17,6 +17,7 @@ Este workspace esta organizado para avanzar en tres tracks del PRD:
 - `services/backend`: backend, integraciones y MCP-adjacent services.
 - `packages/shared`: codigo compartido entre apps y servicios.
 - `docs`: PRD, evidencia, backlog y runbooks.
+- `knowledge`: memoria local derivada de YouTube, Reddit, fuentes web, tendencias de IA, patrones de implementacion e ideas de monetizacion.
 
 ## Siguiente paso cuando exista el remoto
 
@@ -39,7 +40,8 @@ git status
 ## Orden recomendado de trabajo
 
 1. Completar `docs/evidence/` con claims, prompts y minutos verificados.
-2. Ejecutar `Track A` y dejar bitacora en `docs/learning-log/`.
-3. Construir MVP de `apps/web`.
-4. Integrar `services/backend` y validar flujo MCP.
-5. Solo despues abrir `apps/mobile`.
+2. Guardar investigacion reutilizable en `knowledge/` siguiendo `knowledge/README.md`.
+3. Ejecutar `Track A` y dejar bitacora en `docs/learning-log/`.
+4. Construir MVP de `apps/web`.
+5. Integrar `services/backend` y validar flujo MCP.
+6. Solo despues abrir `apps/mobile`.

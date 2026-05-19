@@ -125,6 +125,19 @@ En este proyecto, `YouTube Researcher` sirve para:
 - alimentar `docs/evidence/video-claims.md`;
 - alimentar `docs/evidence/prompt-matrix.md`;
 - mejorar la reconstruccion educativa de `web`, `mobile` y `backend`.
+- guardar memoria derivada en `knowledge/` para reutilizar hallazgos en futuros analisis y workspaces.
+
+## Memoria derivada obligatoria
+
+Cuando esta skill, un plugin de YouTube o un flujo equivalente analice videos para este workspace, debe producir artefactos en `knowledge/` ademas de la respuesta conversacional:
+
+- raw export o referencia en `knowledge/raw/youtube/`;
+- transcript normalizado en `knowledge/processed/transcripts/` cuando exista;
+- resumen o reporte en `knowledge/processed/summaries/`;
+- insights accionables en `knowledge/processed/insights/`;
+- enlaces a `knowledge/projects/ia-learning/` si hay patrones tecnicos, ideas de monetizacion, mejoras de proceso o novedades de IA.
+
+Los hallazgos deben incluir URL, titulo, fecha de captura, confidence label y timestamp cuando aplique.
 
 ## Nota
 

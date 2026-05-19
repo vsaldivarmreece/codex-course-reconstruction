@@ -32,3 +32,9 @@ DerivedData/
 .expo-shared/
 android/
 ios/
+
+# Local knowledge indexes and generated vector stores
+knowledge/index/
+knowledge/**/*.db
+knowledge/**/*.sqlite
+knowledge/**/*.sqlite3
