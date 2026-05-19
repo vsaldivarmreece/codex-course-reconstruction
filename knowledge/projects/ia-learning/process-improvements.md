@@ -41,3 +41,12 @@ Ideas for improving how this workspace researches, builds, validates, documents,
 - Proposed change: always save per-video transcript error JSON next to successful transcripts and include a report section separating metadata-backed, transcript-backed, inferred, and recommended claims.
 - Expected impact: prevents summaries from pretending to have transcript evidence and makes future retries/audits straightforward.
 - Validation step: retry the Riley Brown source pack later with a working PO token or authorized cookies and compare the updated transcript-backed report against this metadata-only version.
+
+## Codex PM Control Plane
+
+- Source: [Codex and AI project management search](../../processed/summaries/youtube-codex-ai-project-management-2026-05-19.md)
+- Confidence: inferred
+- Current friction: AI coding work can move faster than project tracking, validation, and memory updates.
+- Proposed change: use a single control-plane template for Codex-driven work with goal, spec, task owner, worktree/branch, files, validation command, status, risk, and memory update.
+- Expected impact: makes AI-assisted software project management auditable instead of just conversational.
+- Validation step: run one real `ia-learning` feature through the template and compare rework, missing context, and verification quality against an ad hoc Codex session.

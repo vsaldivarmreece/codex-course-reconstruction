@@ -65,3 +65,15 @@ Validation tasks derived from source research and implementation work.
 - Failure signal: the quickstart omits evidence fields, produces passive summaries, or requires manual convention lookup.
 - Evidence to capture: quickstart doc, completed sample report, missing-step notes.
 - Status: planned
+
+## Codex PM Control Plane Trial
+
+- Source: [Codex and AI project management search](../../processed/summaries/youtube-codex-ai-project-management-2026-05-19.md)
+- Confidence: inferred
+- Hypothesis: Codex-driven project work improves when every task is tracked through a compact control plane with spec, owner, files, validation, and memory update.
+- User/problem: `ia-learning` needs AI agents to support software project management without losing traceability or shipping unvalidated changes.
+- Smallest test: choose one small feature or research-to-implementation task, create a control-plane checklist, execute with Codex, and record validation evidence.
+- Success signal: task finishes with clear acceptance criteria, passing verification, updated project memory, and fewer unresolved context gaps than a normal chat-only workflow.
+- Failure signal: the checklist becomes overhead, misses important dependencies, or fails to prevent rework.
+- Evidence to capture: checklist, changed files, command outputs, final validation notes, and a short post-run improvement.
+- Status: planned

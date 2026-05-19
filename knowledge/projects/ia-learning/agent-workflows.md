@@ -44,3 +44,16 @@ Reusable operating patterns for Codex, plugins, skills, and multi-agent work in 
 - Validation: run the app, open deploy preview, submit test form, inspect generated document, or run API smoke test.
 - Memory update: record reusable implementation/process patterns and open questions.
 - Risks: parallel work without state tracking; unvalidated "done" claims; secrets pasted into prompts.
+
+## Codex PM Control Plane
+
+- Source: [Codex and AI project management search](../../processed/summaries/youtube-codex-ai-project-management-2026-05-19.md)
+- Confidence: inferred
+- Use when: coordinating Codex, subagents, worktrees, GitHub issues, specs, automations, and validation across a software project.
+- Project folder: project repo root plus `knowledge/` for research and decisions.
+- Inputs: goal, requirements/spec, task list or issue, relevant files, owner/agent lane, validation command, risk level.
+- Agent lanes: planner/spec writer; implementation worker; reviewer/tester; project hygiene automation; memory curator.
+- Artifacts: spec, task checklist, branch/worktree notes, test output, review notes, source-index or project-memory update.
+- Validation: every lane must produce either passing verification evidence or an explicit blocker with next action.
+- Memory update: summarize reusable patterns in `knowledge/projects/ia-learning/` and preserve raw source evidence when external content influenced the decision.
+- Risks: vague tasks, hidden dependencies, duplicated work across agents, missing acceptance criteria, and treating generated summaries as primary evidence.
