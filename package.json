@@ -5,6 +5,8 @@
   "packageManager": "pnpm@10.0.0",
   "scripts": {
     "check:docs": "echo 'Docs scaffolding ready'",
+    "notebooklm:mcp:build": "corepack pnpm --filter @ia-learning/notebooklm-mcp build",
+    "notebooklm:mcp:dev": "corepack pnpm --filter @ia-learning/notebooklm-mcp dev",
     "plan:web": "echo 'Next step: scaffold apps/web'",
     "plan:mobile": "echo 'Next step: scaffold apps/mobile'",
     "plan:backend": "echo 'Next step: define Supabase + MCP flow'"

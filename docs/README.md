@@ -8,6 +8,12 @@ Documentacion viva del proyecto.
 - `runbooks/`: pasos operativos y flujos repetibles.
 - `skills/`: convenciones para investigadores, plugins y agentes.
 
+## Guias de agentes
+
+- [Guia Practica de Codex](skills/codex-practical-guide.md): investigacion sintetizada sobre como usar Codex como agente de ingenieria, reviewer, investigador, coordinador y memoria local.
+- [Codex Prompt Briefs](skills/codex-prompt-briefs.md): plantilla para asignar tareas claras a Codex con contexto, alcance, criterios de aceptacion y verificacion.
+- [Codex Engineering Pre-Read](skills/codex-engineering-pre-read.md): guia portable para preparar decisiones tecnicas con Codex antes de planear, implementar o automatizar trabajo.
+
 ## Memoria derivada
 
 La investigacion reutilizable de YouTube, Reddit, fuentes web, novedades de IA, ideas de monetizacion y patrones tecnicos vive en `../knowledge/`.

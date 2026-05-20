@@ -77,3 +77,15 @@ Validation tasks derived from source research and implementation work.
 - Failure signal: the checklist becomes overhead, misses important dependencies, or fails to prevent rework.
 - Evidence to capture: checklist, changed files, command outputs, final validation notes, and a short post-run improvement.
 - Status: planned
+
+## Engineering Manager Pre-Read Trial
+
+- Source: [AI for engineering management and software project administration](../../processed/summaries/youtube-ai-engineering-management-2026-05-20.md)
+- Confidence: experimental
+- Hypothesis: a compact AI-generated pre-read will make `ia-learning` planning more reliable by surfacing stale sources, experiments, open questions, and validation gaps before work starts.
+- User/problem: a solo builder or small team needs engineering-management context without manually scanning every project memory file.
+- Smallest test: generate one pre-read from git status, recent commits, `knowledge/projects/ia-learning/source-index.md`, `experiments.md`, `open-questions.md`, and recent raw sources.
+- Success signal: the pre-read identifies at least three actionable next steps, one stale item, or one missing evidence link that changes the work plan.
+- Failure signal: the pre-read repeats obvious information, misses important project state, or creates more review work than it saves.
+- Evidence to capture: generated pre-read, changed priorities, manual corrections, elapsed time, and follow-up tasks.
+- Status: planned

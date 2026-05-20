@@ -57,3 +57,16 @@ Reusable operating patterns for Codex, plugins, skills, and multi-agent work in 
 - Validation: every lane must produce either passing verification evidence or an explicit blocker with next action.
 - Memory update: summarize reusable patterns in `knowledge/projects/ia-learning/` and preserve raw source evidence when external content influenced the decision.
 - Risks: vague tasks, hidden dependencies, duplicated work across agents, missing acceptance criteria, and treating generated summaries as primary evidence.
+
+## Engineering Manager Pre-Read
+
+- Source: [AI for engineering management and software project administration](../../processed/summaries/youtube-ai-engineering-management-2026-05-20.md)
+- Confidence: inferred
+- Use when: preparing weekly planning, deciding what to build next, or starting a medium/high-risk implementation task.
+- Project folder: `knowledge/projects/ia-learning/`
+- Inputs: git status, recent commits, source index, experiments, open questions, process improvements, validation outputs, and new raw sources.
+- Agent lanes: signal collector; evidence checker; priority synthesizer; task drafter.
+- Artifacts: short pre-read with decisions needed, stale items, missing evidence, validation gaps, and recommended next actions.
+- Validation: each recommendation links to a file, source URL, command output, or explicit inference label.
+- Memory update: append accepted improvements or experiments to project memory and update source-index if new evidence was used.
+- Risks: noisy summaries, treating inferred priorities as facts, and over-automating planning before the signal set is stable.

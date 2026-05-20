@@ -1,0 +1,29 @@
+{
+  "name": "@ia-learning/notebooklm-mcp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "MCP server for the official NotebookLM Enterprise and Podcast APIs.",
+  "type": "module",
+  "bin": {
+    "notebooklm-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "google-auth-library": "^10.6.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

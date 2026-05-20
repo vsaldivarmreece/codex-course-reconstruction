@@ -59,3 +59,12 @@ Ideas for improving how this workspace researches, builds, validates, documents,
 - Proposed change: treat every meaningful Codex request as a small engineering brief with goal, repo area, constraints, acceptance criteria, verification command, and desired final artifact.
 - Expected impact: makes local, app, and cloud Codex runs more reproducible and reduces rework.
 - Validation step: apply the brief format to the next three implementation tasks and compare cycle time, test quality, and number of follow-up corrections.
+
+## Engineering Manager Pre-Read
+
+- Source: [AI for engineering management and software project administration](../../processed/summaries/youtube-ai-engineering-management-2026-05-20.md)
+- Confidence: inferred
+- Current friction: project decisions can be made from chat memory instead of a compact view of recent repo state, source evidence, experiments, and open questions.
+- Proposed change: before weekly planning or a medium implementation task, generate a short pre-read from git status, recent commits, source-index changes, stale experiments, open questions, and missing validation evidence.
+- Expected impact: better prioritization, fewer forgotten follow-ups, and clearer handoff from research into implementation.
+- Validation step: run one manual pre-read for `ia-learning`, then record whether it changes the next three task priorities.
