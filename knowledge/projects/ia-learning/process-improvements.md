@@ -50,3 +50,12 @@ Ideas for improving how this workspace researches, builds, validates, documents,
 - Proposed change: use a single control-plane template for Codex-driven work with goal, spec, task owner, worktree/branch, files, validation command, status, risk, and memory update.
 - Expected impact: makes AI-assisted software project management auditable instead of just conversational.
 - Validation step: run one real `ia-learning` feature through the template and compare rework, missing context, and verification quality against an ad hoc Codex session.
+
+## Codex Prompt Briefs
+
+- Source: [OpenAI Codex official usage notes](../../processed/summaries/openai-codex-official-usage-guide-2026-05-20.md)
+- Confidence: inferred
+- Current friction: vague Codex prompts produce extra clarification rounds, uneven verification, and final answers that are hard to review.
+- Proposed change: treat every meaningful Codex request as a small engineering brief with goal, repo area, constraints, acceptance criteria, verification command, and desired final artifact.
+- Expected impact: makes local, app, and cloud Codex runs more reproducible and reduces rework.
+- Validation step: apply the brief format to the next three implementation tasks and compare cycle time, test quality, and number of follow-up corrections.
